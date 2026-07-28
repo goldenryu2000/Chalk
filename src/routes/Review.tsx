@@ -48,7 +48,7 @@ export function Review() {
     <Shell wide>
       <header className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <SectionLabel>Draft — nothing is published yet</SectionLabel>
+          <SectionLabel>Draft: nothing is published yet</SectionLabel>
           <h1 className="mt-1 text-3xl font-semibold">{lesson.title}</h1>
           <div className="mt-2">
             <CurriculumTag
@@ -155,7 +155,7 @@ export function Review() {
       <div className="mt-8">
         <DemoNote>
           “Regenerate” swaps in a second version that was written by hand, not
-          generated — three of the quiz blocks have one. Everything you edit
+          generated. Three of the quiz blocks have one. Everything you edit
           here shows up in classroom and solo mode.
         </DemoNote>
       </div>
@@ -342,7 +342,7 @@ function ApprovedState({
         <h1 className="mt-5 text-3xl font-semibold">Published to Class 10-B.</h1>
         <p className="mt-3 leading-relaxed text-ink-2">
           {blockCount} blocks, {edits} teacher edit{edits === 1 ? '' : 's'}. Your
-          name is on it — which is the point.
+          name is on it, which is the point.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2">

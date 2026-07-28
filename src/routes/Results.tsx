@@ -20,7 +20,7 @@ import { BLOCK_LABELS } from '../types/lesson'
 
 /**
  * The loop closing: because every block carries its outcome ids, a wrong answer
- * points at a specific thing the class did not learn — not just a low score.
+ * points at a specific thing the class did not learn, not just a low score.
  */
 export function Results() {
   const lesson = useLessonStore((s) => s.lesson)
@@ -171,7 +171,7 @@ export function Results() {
       <div className="mt-8">
         <DemoNote>
           These numbers are fixtures, not your run. They show the shape of the
-          report a teacher would get back — scores tied to the same outcome ids
+          report a teacher would get back, with scores tied to the same outcome ids
           the lesson was built from.
         </DemoNote>
       </div>

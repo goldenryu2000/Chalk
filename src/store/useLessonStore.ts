@@ -5,7 +5,7 @@ import type { Block, Lesson } from '../types/lesson'
 /**
  * A single working copy of the lesson, shared by Review, Present, Play and
  * Results. In the real product this would be a server document; here it lives
- * in memory and resets on reload, which is fine — and honest — for a demo.
+ * in memory and resets on reload, which is fine, and honest, for a demo.
  */
 
 export interface WizardChoices {

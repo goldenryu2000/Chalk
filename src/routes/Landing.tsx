@@ -27,7 +27,7 @@ export function Landing() {
       <footer className="border-t border-line px-5 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 text-xs text-ink-3">
           <p className="font-semibold text-ink-2">
-            Chalk — concept demo, not a product.
+            Chalk: concept demo, not a product.
           </p>
           <p className="max-w-2xl leading-relaxed">
             Everything here runs in your browser with hand-written content. No AI
@@ -56,7 +56,7 @@ function Hero() {
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-2">
             Chalk turns an NCERT chapter into a ready-to-teach interactive
-            lesson — explainers, labelled diagrams, matching, and quiz games.
+            lesson: explainers, labelled diagrams, matching, and quiz games.
             The teacher edits and approves every block before a single student
             sees it.
           </p>
@@ -157,7 +157,7 @@ function HowItWorks() {
     {
       n: '02',
       title: 'Review every block',
-      body: 'The draft arrives tagged outcome by outcome. Edit the wording, regenerate a weak question, delete what you do not want — and see plainly which outcomes the draft missed.',
+      body: 'The draft arrives tagged outcome by outcome. Edit the wording, regenerate a weak question, delete what you do not want, and see plainly which outcomes the draft missed.',
     },
     {
       n: '03',
@@ -207,7 +207,7 @@ function TwoModes() {
           tone="paper"
           label="Solo mode"
           title="The same lesson, on their phone"
-          body="Set it as homework and the identical blocks become a self-paced, scored run — one block at a time, instant feedback, and a Rapid Fire round at the end for the quiz questions."
+          body="Set it as homework and the identical blocks become a self-paced, scored run: one block at a time, instant feedback, and a Rapid Fire round at the end for the quiz questions."
           bullets={['Mobile first', 'Instant feedback', 'Rapid Fire scoring']}
         />
       </div>
@@ -283,7 +283,7 @@ function CurriculumLock() {
           <p className="mt-4 leading-relaxed text-ink-2">
             Because the chapter's outcomes are known up front, coverage is
             checkable. Chalk shows the teacher exactly which outcomes the draft
-            addressed and which it skipped — and after the class, which outcome
+            addressed and which it skipped, and after the class, which outcome
             the marks actually fell down on.
           </p>
           <p className="mt-3 leading-relaxed text-ink-2">

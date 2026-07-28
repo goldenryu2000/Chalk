@@ -58,7 +58,7 @@ export function Dashboard() {
 
             <div className="text-right">
               <p className="font-display text-4xl font-semibold">
-                {approved ? lesson.blocks.length : '—'}
+                {approved ? lesson.blocks.length : '–'}
               </p>
               <p className="text-xs text-ink-3">blocks</p>
             </div>
@@ -113,7 +113,7 @@ export function Dashboard() {
 
       <div className="mt-10">
         <DemoNote>
-          This is a concept demo. No AI model is called and nothing is saved —
+          This is a concept demo. No AI model is called and nothing is saved.
           the lesson is hand-written NCERT content and resets when you reload.
         </DemoNote>
       </div>

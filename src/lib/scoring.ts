@@ -2,7 +2,7 @@ import type { LearningOutcome, Lesson } from '../types/lesson'
 
 /**
  * Pure functions shared by the Play, Present and Results screens. Kept free of
- * React so they can be tested directly — this is the only part of the demo with
+ * React so they can be tested directly. This is the only part of the demo with
  * logic worth getting wrong.
  */
 

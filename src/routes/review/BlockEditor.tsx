@@ -4,7 +4,7 @@ import type { Block } from '../../types/lesson'
 
 /**
  * Text editing for the selected block. Only the fields a teacher would actually
- * want to reword are exposed — structure (block type, hotspot positions) is not
+ * want to reword are exposed. Structure (block type, hotspot positions) is not
  * editable here, because that is the part they trust Chalk to get right.
  */
 export function BlockEditor({
@@ -31,7 +31,7 @@ export function BlockEditor({
             onChange={(title) => patch({ title } as Partial<Block>)}
           />
           <TextArea
-            label="Body — one paragraph per blank line"
+            label="Body: one paragraph per blank line"
             rows={10}
             value={block.body.join('\n\n')}
             onChange={(text) =>

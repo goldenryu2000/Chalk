@@ -86,7 +86,7 @@ function WizardForm({ onStart }: { onStart: () => void }) {
           >
             {chapterList.map((chapter, i) => (
               <option key={chapter} value={chapter}>
-                Chapter {i + 1} — {chapter}
+                Chapter {i + 1}: {chapter}
               </option>
             ))}
           </select>

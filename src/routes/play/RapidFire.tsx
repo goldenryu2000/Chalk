@@ -7,7 +7,7 @@ import { Button } from '../../components/ui'
 
 /**
  * The game shell: the lesson's own quiz blocks, on a clock, with a streak.
- * No new content is authored for it — that is the whole idea. Any question set
+ * No new content is authored for it, and that is the whole idea. Any question set
  * in any lesson can be played this way.
  */
 export function RapidFire({

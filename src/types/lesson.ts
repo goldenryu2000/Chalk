@@ -2,10 +2,10 @@
  * The lesson document is the whole product in one shape.
  *
  * Four renderers consume it and nothing else:
- *   Review   — every block, editable
- *   Present  — every block, projector-sized, teacher-driven
- *   Play     — one block at a time, scored
- *   Results  — the scores that came back out
+ *   Review:   every block, editable
+ *   Present:  every block, projector-sized, teacher-driven
+ *   Play:     one block at a time, scored
+ *   Results:  the scores that came back out
  *
  * A real backend would only ever be asked to produce this JSON. That is why the
  * demo hard-codes it: the interface is the deliverable, the generator is not.
@@ -25,7 +25,7 @@ export interface LessonMeta {
   subject: string
   chapterNumber: number
   chapter: string
-  /** Every outcome the chapter declares — including ones this lesson misses. */
+  /** Every outcome the chapter declares, including ones this lesson misses. */
   outcomes: LearningOutcome[]
   durationMinutes: number
   difficulty: 'Foundation' | 'Standard' | 'Advanced'

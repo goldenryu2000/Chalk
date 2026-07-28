@@ -1,6 +1,6 @@
 /**
  * Plausible-looking class responses for Present mode. Derived from the block id
- * so the same question always shows the same bars — a demo that reshuffles its
+ * so the same question always shows the same bars. A demo that reshuffles its
  * numbers on every render looks like what it is.
  */
 
@@ -49,7 +49,7 @@ export function pollPercentages(
   return shares
 }
 
-/** How many of the class have "answered" — sits under the poll bars. */
+/** How many of the class have "answered". Sits under the poll bars. */
 export function respondedCount(blockId: string, present: number): number {
   return present - (hash(blockId) % 3)
 }

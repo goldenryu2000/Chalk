@@ -257,7 +257,7 @@ function ScoreScreen({
         </div>
 
         <p className="mt-8 rounded-xl bg-paper-2 px-4 py-3 text-sm leading-relaxed text-ink-2">
-          This is what the teacher sees for all 31 students at once — which is
+          This is what the teacher sees for all 31 students at once, which is
           the{' '}
           <Link to="/results" className="font-semibold text-accent underline">
             class results

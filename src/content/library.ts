@@ -164,7 +164,7 @@ export const misconceptions: Misconception[] = [
     outcome: '9.3',
     headline: '18 students dropped the sign convention',
     detail:
-      'On the mirror-formula question, the most common wrong answer put the image behind the mirror — they used u = +15 instead of u = −15.',
+      'On the mirror-formula question, the most common wrong answer put the image behind the mirror: they used u = +15 instead of u = −15.',
     students: 18,
   },
   {

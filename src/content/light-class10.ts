@@ -4,7 +4,7 @@ import type { Block, Lesson } from '../types/lesson'
  * The hero lesson. In the real product this is what the generator returns and
  * the teacher then edits; here it is hand-written so the demo has no backend.
  *
- * Source: NCERT Science, Class 10, Chapter 9 — Light: Reflection and Refraction
+ * Source: NCERT Science, Class 10, Chapter 9, Light: Reflection and Refraction
  * (2023 rationalised edition, where Light is Chapter 9).
  */
 
@@ -40,7 +40,7 @@ const blocks: Block[] = [
     title: 'Light bounces, and it bounces predictably',
     figure: 'plane-mirror',
     body: [
-      'A highly polished surface — a mirror, still water, a steel plate — sends almost all the light falling on it back into the same medium. That turning back is reflection.',
+      'A highly polished surface (a mirror, still water, a steel plate) sends almost all the light falling on it back into the same medium. That turning back is reflection.',
       'It is not random. Draw a line perpendicular to the mirror at the point where the ray lands; that line is the normal. Every reflection obeys two rules with respect to it.',
       'First: the angle of incidence equals the angle of reflection. Second: the incident ray, the reflected ray and the normal all lie in one plane. These two laws hold for every reflecting surface, curved or flat.',
     ],
@@ -48,7 +48,7 @@ const blocks: Block[] = [
       {
         term: 'Normal',
         definition:
-          'The line drawn perpendicular to the reflecting surface at the point of incidence. All angles are measured from it — never from the mirror itself.',
+          'The line drawn perpendicular to the reflecting surface at the point of incidence. All angles are measured from it, never from the mirror itself.',
       },
       {
         term: 'Angle of incidence (∠i)',
@@ -87,7 +87,7 @@ const blocks: Block[] = [
     options: ['35°', '55°', '70°', '110°'],
     answerIndex: 2,
     explanation:
-      'By the first law of reflection ∠r = ∠i = 35°. Both angles are measured from the normal, and the two rays lie on opposite sides of it — so the angle between the rays is 35° + 35° = 70°.',
+      'By the first law of reflection ∠r = ∠i = 35°. Both angles are measured from the normal, and the two rays lie on opposite sides of it, so the angle between the rays is 35° + 35° = 70°.',
   },
   {
     id: 'b-spherical-intro',
@@ -170,7 +170,7 @@ const blocks: Block[] = [
     ],
     answerIndex: 1,
     explanation:
-      'A convex mirror always produces a virtual, erect and diminished image regardless of where the object is. Because the image is diminished, a much larger area of traffic fits into the same mirror — a wider field of view than a plane mirror of equal size.',
+      'A convex mirror always produces a virtual, erect and diminished image regardless of where the object is. Because the image is diminished, a much larger area of traffic fits into the same mirror, giving a wider field of view than a plane mirror of equal size.',
   },
   {
     id: 'b-mcq-mirror-formula',
@@ -186,7 +186,7 @@ const blocks: Block[] = [
     ],
     answerIndex: 1,
     explanation:
-      'Using the sign convention, u = −15 cm and f = −10 cm. From 1/v + 1/u = 1/f: 1/v = 1/f − 1/u = −1/10 + 1/15 = −1/30, so v = −30 cm. The negative sign means the image is 30 cm in front of the mirror — real, inverted and magnified.',
+      'Using the sign convention, u = −15 cm and f = −10 cm. From 1/v + 1/u = 1/f: 1/v = 1/f − 1/u = −1/10 + 1/15 = −1/30, so v = −30 cm. The negative sign means the image is 30 cm in front of the mirror: real, inverted and magnified.',
   },
   {
     id: 'b-refraction-intro',
@@ -197,13 +197,13 @@ const blocks: Block[] = [
     body: [
       'Light does not travel at the same speed in every medium. When a ray crosses from air into glass or water, that change in speed forces it to change direction at the boundary. This bending is refraction.',
       'Going from a rarer medium into a denser one the ray bends towards the normal; coming back out into a rarer medium it bends away from the normal. A ray hitting the surface along the normal does not bend at all.',
-      'Pass a ray through a rectangular glass slab and it emerges parallel to the direction it went in — just shifted sideways. That sideways shift is the lateral displacement, and it is why a straw in a glass of water looks snapped at the surface.',
+      'Pass a ray through a rectangular glass slab and it emerges parallel to the direction it went in, just shifted sideways. That sideways shift is the lateral displacement, and it is why a straw in a glass of water looks snapped at the surface.',
     ],
     keyTerms: [
       {
         term: 'Refractive index (n)',
         definition:
-          'n = c / v — the speed of light in vacuum divided by its speed in the medium. It has no unit.',
+          'n = c / v, the speed of light in vacuum divided by its speed in the medium. It has no unit.',
       },
       {
         term: 'Optically denser medium',
@@ -327,14 +327,14 @@ export const alternates: Record<string, Block[]> = {
       ],
       answerIndex: 1,
       explanation:
-        'Refractive index and speed are inversely related, since n = c / v. Diamond has the higher refractive index, so light is slower in diamond — and faster in water.',
+        'Refractive index and speed are inversely related, since n = c / v. Diamond has the higher refractive index, so light is slower in diamond and faster in water.',
     },
   ],
 }
 
 /**
  * The block offered when the teacher clicks "Cover this" on the outcome the
- * draft missed (9.6 — lens formula and power).
+ * draft missed (9.6, lens formula and power).
  */
 export const lensBlock: Block = {
   id: 'b-mcq-lens-power',
@@ -368,7 +368,7 @@ export const generationSteps = [
   },
   {
     label: 'Checking curriculum coverage',
-    detail: '5 of 6 outcomes covered — 9.6 flagged for the teacher',
+    detail: '5 of 6 outcomes covered, 9.6 flagged for the teacher',
   },
   {
     label: 'Ready for your review',

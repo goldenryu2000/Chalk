@@ -3,9 +3,9 @@ import type { Block } from '../../types/lesson'
 /**
  * Every block renders in exactly three situations, and knows about no others:
  *
- *   preview — inside the Review editor: static, answers visible to the teacher
- *   play    — a student on their own device: interactive and scored
- *   present — on the projector: interactive, blackboard palette, teacher-paced
+ *   preview: inside the Review editor, static, answers visible to the teacher
+ *   play:    a student on their own device, interactive and scored
+ *   present: on the projector, interactive, blackboard palette, teacher-paced
  */
 export type BlockVariant = 'preview' | 'play' | 'present'
 

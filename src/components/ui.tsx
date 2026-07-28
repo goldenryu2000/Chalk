@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 
-/** Small shared primitives. Deliberately few — the screens carry the design. */
+/** Small shared primitives. Deliberately few; the screens carry the design. */
 
 export function Logo({ tone = 'ink' }: { tone?: 'ink' | 'chalk' }) {
   const text = tone === 'chalk' ? 'text-paper' : 'text-ink'
