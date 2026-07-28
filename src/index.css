@@ -1,0 +1,90 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/fraunces';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+  /* Warm paper-and-ink base, so it reads like classroom material, not a dashboard. */
+  --color-paper: #faf7f2;
+  --color-paper-2: #f2ece2;
+  --color-ink: #1a1614;
+  --color-ink-2: #4a423c;
+  --color-ink-3: #857a71;
+  --color-line: #e3dace;
+
+  /* Blackboard surface for Present mode. */
+  --color-board: #16211d;
+  --color-board-2: #1e2d28;
+  --color-board-line: #35473f;
+
+  /* Vermillion primary — warm and Indian without being a flag. */
+  --color-accent: #d9541e;
+  --color-accent-soft: #fbe9df;
+  --color-accent-deep: #ab3f13;
+
+  /* Chalk green for correct / covered. */
+  --color-good: #0e7c66;
+  --color-good-soft: #dcf0ea;
+  --color-bad: #b4322c;
+  --color-bad-soft: #fae3e1;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-synthesis-weight: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    font-variation-settings: 'SOFT' 0, 'WONK' 0, 'opsz' 40;
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@utility card {
+  @apply rounded-2xl border border-line bg-white;
+}
+
+@utility chip {
+  @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+}
+
+/* Chalk-dust texture for the board surfaces in Present mode. */
+@utility board-surface {
+  background-color: var(--color-board);
+  background-image:
+    radial-gradient(circle at 18% 22%, rgb(255 255 255 / 0.05), transparent 42%),
+    radial-gradient(circle at 82% 78%, rgb(255 255 255 / 0.04), transparent 46%);
+}
+
+@keyframes chalk-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility chalk-in {
+  animation: chalk-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
