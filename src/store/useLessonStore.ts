@@ -126,11 +126,13 @@ export const useLessonStore = create<LessonState>((set) => ({
 
   approve: () => set({ approved: true }),
 
+  // Deliberately leaves `wizard` alone: this runs when the teacher presses
+  // "Build the lesson", and wiping their board/difficulty/language choices at
+  // that exact moment would silently contradict what they just picked.
   reset: () =>
     set({
       lesson: freshLesson(),
       approved: false,
-      wizard: { ...defaultWizard },
       regenerationIndex: {},
     }),
 }))

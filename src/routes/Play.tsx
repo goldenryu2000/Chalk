@@ -101,6 +101,11 @@ export function Play() {
   }
 
   if (phase === 'game') {
+    // /play?game is a hand-typed URL, and the teacher may have deleted every
+    // quiz block in review. Rapid Fire with nothing to ask would crash.
+    if (quizBlocks.length === 0) {
+      return <ScoreScreen results={results} gamePoints={gamePoints} />
+    }
     return (
       <RapidFire
         blocks={quizBlocks}
